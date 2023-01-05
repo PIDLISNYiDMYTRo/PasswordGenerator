@@ -52,10 +52,3 @@ function copyPassword() {
 	// Deselect the text
 	passwordInput.setSelectionRange(0, 0);
 }
-
-
-
-
-// ! Animation
-const element = document.querySelector("copypasswd");
-element.addEventListener("click", () => element.classList.toggle("active"));
