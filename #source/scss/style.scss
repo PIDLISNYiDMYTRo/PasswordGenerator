@@ -3,8 +3,13 @@
 
 body {
 	background-color: #363837;
-	padding: 30px;
+	padding: 180px 0px;
 	color: aliceblue;
+	@media (max-width: 768px) {
+		font-size: 32px;
+		padding: 30px 0px;
+		overflow: hidden;
+	}
 }
 
 
@@ -14,6 +19,7 @@ body {
 	margin: 0 auto;
 	//border: 3px solid #000;
 	text-align: center;
+	padding: 0px 15px;
 }
 
 label {
@@ -37,6 +43,11 @@ button {
 		transition: .6s;
 		padding: 12px 22px;
 	}
+	@media (max-width: 768px) {
+		font-size: 32px;
+		padding: 20px 20px;
+		margin: 0px 0px 20px 0px;
+	}
 }
 
 
@@ -51,10 +62,21 @@ button {
 		font-size: 32px;
 		letter-spacing: 2.8px;
 		text-shadow: 2px 1px 1px #06d11a3b;
+		@media (max-width: 768px) {
+			letter-spacing: 1.5px;
+			font-size: 40px;
+			margin: 0px 0px 30px 0px;
+			span {
+				letter-spacing: 10.2px;
+			}
+		}
 	}
 	&__selection-of-parameters {
 		display: flex;
 		justify-content: center;
+		@media (max-width: 768px) {
+			flex-direction: column;
+		}
 		p {
 			position: relative;
 			margin: 20px;
@@ -79,6 +101,13 @@ button {
 					position: absolute;
 					display: none;
 				}
+				@media (max-width: 768px) {
+					width: 28px;
+					height: 28px;
+					position: absolute;
+					top: 0;
+					left: 45px;
+				}
 			}
 		}
 		.label__container input {
@@ -101,6 +130,14 @@ button {
 	}
 	&__the-main-thing {
 		margin: 0px 0px 20px 0px;
+		@media (max-width: 768px) {
+			margin: 30px 0px 40px 0px;
+			p:first-child {
+				input {
+					padding: 10px 0px;
+				}
+			}
+		}
 		p:last-child {
 			margin: 10px 0px 0px 0px;
 			input {
@@ -108,7 +145,9 @@ button {
 				width: 100%;
 				border-radius: 0;
 				border: 2px solid #000;
-
+				@media (max-width: 768px) {
+					padding: 15px 5px;
+				}
 			}
 		}
 	}

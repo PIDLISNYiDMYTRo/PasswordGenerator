@@ -74,14 +74,22 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------*/
 body {
   background-color: #363837;
-  padding: 30px;
+  padding: 180px 0px;
   color: aliceblue;
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 32px;
+    padding: 30px 0px;
+    overflow: hidden;
+  }
 }
 
 .container {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
+  padding: 0px 15px;
 }
 
 label {
@@ -108,6 +116,13 @@ button:hover {
   transition: 0.6s;
   padding: 12px 22px;
 }
+@media (max-width: 768px) {
+  button {
+    font-size: 32px;
+    padding: 20px 20px;
+    margin: 0px 0px 20px 0px;
+  }
+}
 
 .passwdgen {
   padding: 20px 10px;
@@ -122,9 +137,24 @@ button:hover {
   letter-spacing: 2.8px;
   text-shadow: 2px 1px 1px rgba(6, 209, 26, 0.231372549);
 }
+@media (max-width: 768px) {
+  .passwdgen h1 {
+    letter-spacing: 1.5px;
+    font-size: 40px;
+    margin: 0px 0px 30px 0px;
+  }
+  .passwdgen h1 span {
+    letter-spacing: 10.2px;
+  }
+}
 .passwdgen__selection-of-parameters {
   display: flex;
   justify-content: center;
+}
+@media (max-width: 768px) {
+  .passwdgen__selection-of-parameters {
+    flex-direction: column;
+  }
 }
 .passwdgen__selection-of-parameters p {
   position: relative;
@@ -152,6 +182,15 @@ button:hover {
   position: absolute;
   display: none;
 }
+@media (max-width: 768px) {
+  .passwdgen__selection-of-parameters .label__container .checkmark {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 0;
+    left: 45px;
+  }
+}
 .passwdgen__selection-of-parameters .label__container input {
   position: absolute;
   opacity: 0;
@@ -172,6 +211,14 @@ button:hover {
 .passwdgen__the-main-thing {
   margin: 0px 0px 20px 0px;
 }
+@media (max-width: 768px) {
+  .passwdgen__the-main-thing {
+    margin: 30px 0px 40px 0px;
+  }
+  .passwdgen__the-main-thing p:first-child input {
+    padding: 10px 0px;
+  }
+}
 .passwdgen__the-main-thing p:last-child {
   margin: 10px 0px 0px 0px;
 }
@@ -180,4 +227,9 @@ button:hover {
   width: 100%;
   border-radius: 0;
   border: 2px solid #000;
+}
+@media (max-width: 768px) {
+  .passwdgen__the-main-thing p:last-child input {
+    padding: 15px 5px;
+  }
 }
