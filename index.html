@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-ua">
+
+<head>
+	<!-- Заголовок страницы в браузере -->
+	<title>Password Generator</title>
+	<!-- Подключаем CSS -->
+	<link rel="stylesheet" href="css/style.css" />
+	<!-- Кодировка страницы -->
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+	<div class="container">
+		<div class="passwdgen">
+			<h1>Password Generator</h1>
+			<div class="passwdgen__selection-of-parameters">
+				<p>
+					<label class="label__container" for="includeLowercase">абвгд
+						<input type="checkbox" id="includeLowercase" checked>
+						<span class="checkmark"></span>
+					</label>
+				</p>
+				<p>
+					<label class="label__container" for="includeUppercase">АБВГД
+						<input type="checkbox" id="includeUppercase" checked>
+						<span class="checkmark"></span>
+					</label>
+				</p>
+				<p>
+					<label class="label__container" for="includeNumbers">01234
+						<input type="checkbox" id="includeNumbers" checked="checked">
+						<span class="checkmark"></span>
+					</label>
+				</p>
+				<p>
+					<label class="label__container" for="includeSymbols">"!@#$%"
+						<input type="checkbox" id="includeSymbols" checked>
+						<span class="checkmark"></span>
+					</label>
+				</p>
+			</div>
+			<div class="passwdgen__the-main-thing">
+				<p><label for="passwordLength">вибрати <input type="number" id="passwordLength" value="16" min="8"
+							max="128"> довжину</label>
+				</p>
+				<p><label for="password"></label>
+					<input type="text" id="password" readonly placeholder="Згенерований пароль">
+				</p>
+			</div>
+			<p>
+				<button onclick="generatePassword()">Згенерувати пароль</button>
+			</p>
+
+			<p>
+				<button class="copypasswd" onclick="copyPassword()">Скопіювати пароль</button>
+			</p>
+			<!-- <div id="prompt">Пароль скопійовано</div> -->
+
+
+		</div>
+		<script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  background-color: #363837;
+  padding: 30px;
+  color: aliceblue;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+label {
+  cursor: pointer;
+}
+
+input {
+  padding: 5px 0px;
+  border: 1px solid #000;
+  border-radius: 7px;
+  text-align: center;
+  background-color: rgb(247, 248, 248);
+  font-size: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 0px 0px 10px 0px;
+  background-color: #2eff43;
+  border-radius: 5px;
+}
+button:hover {
+  box-shadow: 2px 2px 7px #49db57, -2px -2px 7px #49db57;
+  transition: 0.6s;
+  padding: 12px 22px;
+}
+
+.passwdgen {
+  padding: 20px 10px;
+  display: inline-block;
+  border: 1px solid #2EFF43;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px #49db57, -5px -5px 15px #49db57;
+}
+.passwdgen h1 {
+  margin: 0px 0px 15px 0px;
+  font-size: 32px;
+  letter-spacing: 2.8px;
+  text-shadow: 2px 1px 1px rgba(6, 209, 26, 0.231372549);
+}
+.passwdgen__selection-of-parameters {
+  display: flex;
+  justify-content: center;
+}
+.passwdgen__selection-of-parameters p {
+  position: relative;
+  margin: 20px;
+}
+.passwdgen__selection-of-parameters .label__container {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.passwdgen__selection-of-parameters .label__container .checkmark {
+  position: absolute;
+  bottom: 0;
+  left: -18px;
+  width: 15px;
+  height: 15px;
+  background-color: #eee;
+  border: 1px solid #000;
+  border-radius: 2px;
+  box-shadow: inset 1px 1px 1px #000, 1px 1px 1px #000;
+}
+.passwdgen__selection-of-parameters .label__container .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.passwdgen__selection-of-parameters .label__container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.passwdgen__selection-of-parameters .label__container:hover input ~ .checkmark {
+  background-color: #2EFF43;
+  transition: 0.5s;
+}
+.passwdgen__selection-of-parameters .label__container input:checked ~ .checkmark {
+  background-color: #2EFF43;
+}
+.passwdgen__selection-of-parameters .label__container input:checked ~ .checkmark::after {
+  display: block;
+}
+.passwdgen__the-main-thing {
+  margin: 0px 0px 20px 0px;
+}
+.passwdgen__the-main-thing p:last-child {
+  margin: 10px 0px 0px 0px;
+}
+.passwdgen__the-main-thing p:last-child input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 0;
+  border: 2px solid #000;
+}
