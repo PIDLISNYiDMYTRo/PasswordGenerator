@@ -53,10 +53,19 @@
 				<button onclick="generatePassword()">Згенерувати пароль</button>
 			</p>
 
-			<p>
+			<!--<p>
 				<button class="copypasswd" onclick="copyPassword()">Скопіювати пароль</button>
-			</p>
-			<!-- <div id="prompt">Пароль скопійовано</div> -->
+			</p>-->
+			<!--<button id="copy-button" onclick="copyPassword()">Скопіювати пароль</button>
+			<div class="copy-button__container">
+				<div id="message">Успішно скопійовано!</div>
+			</div>-->
+
+			<button id="copy-button" onclick="copyPassword()">
+				<p id="front">Скопіювати пароль</p>
+				<p id="back">Успішно скопійовано!</p>
+			</button>
+
 		</div>
 		<script src="js/script.js"></script>
 </body>

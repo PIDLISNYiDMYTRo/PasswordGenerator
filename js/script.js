@@ -30,7 +30,6 @@ function generatePassword() {
 	// Display the generated password
 	document.getElementById('password').value = password;
 }
-
 function copyPassword() {
 	// Select the password text
 	var passwordInput = document.getElementById('password');
@@ -39,15 +38,14 @@ function copyPassword() {
 	// Copy the selected text to the clipboard
 	document.execCommand('copy');
 
-	// Display the "password copied" prompt
-	alert('Пароль скопійовано');
-	var prompt = document.getElementById('prompt');
-	prompt.style.display = 'inline-block';
+	// Flip the button
+	var button = document.getElementById('copy-button');
+	button.classList.add('flipped');
 
-	// Hide the prompt after a few seconds
+	// Hide the message after a few seconds
 	setTimeout(function () {
-		prompt.style.display = 'none';
-	}, 2000);
+		button.classList.remove('flipped');
+	}, 800);
 
 	// Deselect the text
 	passwordInput.setSelectionRange(0, 0);

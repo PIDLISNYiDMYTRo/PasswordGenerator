@@ -167,3 +167,49 @@ button {
 		}
 	}
 }
+
+#copy-button {
+	position: relative;
+	width: 52%;
+	height: 7.5vh;
+	background-color: #2eff43;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+	&:hover {
+		transition: .6s;
+	}
+	@media (max-width: 768px) {
+		width: 82%;
+	}
+  }
+#front {
+	position: relative;
+	bottom: 5px;
+	backface-visibility: hidden;
+	@media (max-width: 768px) {
+		bottom: 2px;
+	}
+}
+#back {
+	position: absolute;
+	bottom: 18px;
+	backface-visibility: hidden;
+	transform: rotateY(180deg);
+	font-size: 28px;
+	@media (max-width: 768px) {
+		font-size: 22px;
+		position: relative;
+		bottom: 28px;
+	}
+  } 
+#copy-button.flipped {
+	transform: rotateY(180deg);
+}
+@keyframes flip {
+	from {
+		transform: rotateY(0deg);
+	}
+	to {
+		transform: rotateY(180deg);
+	}
+}
