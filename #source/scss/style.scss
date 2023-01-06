@@ -166,7 +166,7 @@ button {
 				input {
 					padding: 0px;
 					@media (max-width: 768px) {
-						font-size: 22px;
+						font-size: 20px;
 					}
 				}
 			}
@@ -207,7 +207,7 @@ button {
 	@media (max-width: 768px) {
 		position: relative;
 		top: 1px;
-		font-size: 24px;
+		font-size: 22px;
 	}
 }
 #back {
@@ -217,9 +217,9 @@ button {
 	transform: rotateY(180deg);
 	font-size: 28px;
 	@media (max-width: 768px) {
-		font-size: 20px;
+		font-size: 18px;
 		position: relative;
-		bottom: 24px;
+		bottom: 22px;
 	}
   } 
 #copy-button.flipped {

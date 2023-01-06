@@ -279,7 +279,7 @@ button:hover {
 }
 @media (max-width: 768px) and (max-width: 768px) {
   .passwdgen__the-main-thing p:first-child input {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 .passwdgen__the-main-thing p:last-child {
@@ -329,7 +329,7 @@ button:hover {
   #front {
     position: relative;
     top: 1px;
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 
@@ -344,9 +344,9 @@ button:hover {
 }
 @media (max-width: 768px) {
   #back {
-    font-size: 20px;
+    font-size: 18px;
     position: relative;
-    bottom: 24px;
+    bottom: 22px;
   }
 }
 
