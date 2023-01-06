@@ -15,7 +15,7 @@
 	<div class="container">
 		<div class="passwdgen">
 			<h1>Password <span>Generator</span></h1>
-			<div class="passwdgen__selection-of-parameters">
+			<div class="selection-of-parameters">
 				<p>
 					<label class="label__container" for="includeLowercase">абвгд
 						<input type="checkbox" id="includeLowercase" checked>
@@ -41,7 +41,7 @@
 					</label>
 				</p>
 			</div>
-			<div class="passwdgen__the-main-thing">
+			<div class="the-main-thing">
 				<p><label for="passwordLength">вибрати <input type="number" id="passwordLength" value="16" min="8"
 							max="128"> довжину</label>
 				</p>
@@ -50,22 +50,12 @@
 				</p>
 			</div>
 			<p>
-				<button onclick="generatePassword()">Згенерувати пароль</button>
+				<button id="generate-button" onclick="generatePassword()">Згенерувати пароль</button>
 			</p>
-
-			<!--<p>
-				<button class="copypasswd" onclick="copyPassword()">Скопіювати пароль</button>
-			</p>-->
-			<!--<button id="copy-button" onclick="copyPassword()">Скопіювати пароль</button>
-			<div class="copy-button__container">
-				<div id="message">Успішно скопійовано!</div>
-			</div>-->
-
 			<button id="copy-button" onclick="copyPassword()">
 				<p id="front">Скопіювати пароль</p>
 				<p id="back">Успішно скопійовано!</p>
 			</button>
-
 		</div>
 		<script src="js/script.js"></script>
 </body>
