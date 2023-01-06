@@ -260,13 +260,16 @@ button:hover {
   .passwdgen__the-main-thing {
     margin: 30px 0px;
   }
+  .passwdgen__the-main-thing p:first-child label {
+    font-size: 24px;
+  }
   .passwdgen__the-main-thing p:first-child input {
     padding: 0px;
   }
 }
 @media (max-width: 768px) and (max-width: 768px) {
   .passwdgen__the-main-thing p:first-child input {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 .passwdgen__the-main-thing p:last-child {

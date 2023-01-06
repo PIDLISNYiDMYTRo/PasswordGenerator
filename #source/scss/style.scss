@@ -163,10 +163,13 @@ button {
 		@media (max-width: 768px) {
 			margin: 30px 0px;
 			p:first-child {
+				label {
+					font-size: 24px;
+				}
 				input {
 					padding: 0px;
 					@media (max-width: 768px) {
-						font-size: 18px;
+						font-size: 20px;
 					}
 				}
 			}
