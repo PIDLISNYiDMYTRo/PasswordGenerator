@@ -25,6 +25,7 @@ body {
 label {
 	cursor: pointer;
 	font-size: 32px;
+	user-select: none;
 	@media (max-width: 768px) {
 		font-size: 28px;
 	}
@@ -37,7 +38,7 @@ input {
 	background-color: rgb(247, 248, 248);
 	font-size: 40px;
 	@media (max-width: 768px) {
-		font-size: 28px;
+		font-size: 26px;
 	}
 }
 button {
@@ -49,14 +50,10 @@ button {
 	&:hover {
 		box-shadow: 2px 2px 7px #49db57, -2px -2px 7px #49db57;
 		transition: .6s;
-		padding: 22px 42px;
-		@media (max-width: 768px) {
-			padding: 17px 26px;
-		}
 	}
 	@media (max-width: 768px) {
-		font-size: 28px;
-		padding: 15px 24px;
+		font-size: 26px;
+		padding: 15px 22px;
 		margin: 0px 0px 10px 0px;
 	}
 }
