@@ -149,7 +149,7 @@ button:hover {
 }
 @media (max-width: 768px) {
   .passwdgen {
-    padding: 15px 5px;
+    padding: 10px 5px;
   }
 }
 .passwdgen h1 {
@@ -163,6 +163,7 @@ button:hover {
     letter-spacing: 1.5px;
     font-size: 30px;
     margin: 0px 0px 20px 0px;
+    letter-spacing: 5.2px;
   }
   .passwdgen h1 span {
     letter-spacing: 10.2px;
@@ -263,6 +264,11 @@ button:hover {
     padding: 0px;
   }
 }
+@media (max-width: 768px) and (max-width: 768px) {
+  .passwdgen__the-main-thing p:first-child input {
+    font-size: 22px;
+  }
+}
 .passwdgen__the-main-thing p:last-child {
   margin: 10px 0px 0px 0px;
 }
@@ -305,7 +311,7 @@ button:hover {
   #front {
     position: relative;
     top: 1px;
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 
@@ -319,9 +325,9 @@ button:hover {
 }
 @media (max-width: 768px) {
   #back {
-    font-size: 22px;
+    font-size: 20px;
     position: relative;
-    bottom: 28px;
+    bottom: 24px;
   }
 }
 

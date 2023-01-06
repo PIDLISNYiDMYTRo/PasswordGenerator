@@ -63,7 +63,7 @@ button {
 	box-shadow: 5px 5px 15px #49db57, -5px -5px 15px #49db57;
 	background-color: #363837;
 	@media (max-width: 768px) {
-		padding: 15px 5px;
+		padding: 10px 5px;
 	}
 	h1 {
 		margin: 0px 0px 25px 0px;
@@ -74,6 +74,7 @@ button {
 			letter-spacing: 1.5px;
 			font-size: 30px;
 			margin: 0px 0px 20px 0px;
+			letter-spacing: 5.2px;
 			span {
 				letter-spacing: 10.2px;
 			}
@@ -164,6 +165,9 @@ button {
 			p:first-child {
 				input {
 					padding: 0px;
+					@media (max-width: 768px) {
+						font-size: 22px;
+					}
 				}
 			}
 		}
@@ -203,7 +207,7 @@ button {
 	@media (max-width: 768px) {
 		position: relative;
 		top: 1px;
-		font-size: 26px;
+		font-size: 24px;
 	}
 }
 #back {
@@ -213,9 +217,9 @@ button {
 	transform: rotateY(180deg);
 	font-size: 28px;
 	@media (max-width: 768px) {
-		font-size: 22px;
+		font-size: 20px;
 		position: relative;
-		bottom: 28px;
+		bottom: 24px;
 	}
   } 
 #copy-button.flipped {
