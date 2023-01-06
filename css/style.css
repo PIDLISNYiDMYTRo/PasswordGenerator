@@ -281,6 +281,7 @@ button:hover {
   width: 100%;
   border-radius: 0;
   border: 2px solid #000;
+  text-overflow: ellipsis;
 }
 @media (max-width: 768px) {
   .passwdgen__the-main-thing p:last-child input {
