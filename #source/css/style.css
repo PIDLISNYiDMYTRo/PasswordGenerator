@@ -117,7 +117,7 @@ input {
 }
 @media (max-width: 768px) {
   input {
-    font-size: 26px;
+    font-size: 25px;
   }
 }
 
@@ -245,6 +245,24 @@ button:hover {
 }
 .passwdgen__selection-of-parameters .label__container input:checked ~ .checkmark::after {
   display: block;
+}
+.passwdgen__selection-of-parameters .label__container .checkmark:after {
+  left: 14px;
+  top: 5px;
+  width: 7px;
+  height: 20px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+@media (max-width: 768px) {
+  .passwdgen__selection-of-parameters .label__container .checkmark:after {
+    left: 11px;
+    top: 3px;
+    width: 6px;
+    height: 18px;
+  }
 }
 .passwdgen__the-main-thing {
   margin: 0px 0px 20px 0px;
