@@ -315,7 +315,7 @@ button:hover {
 
 #front {
   position: relative;
-  bottom: 5px;
+  bottom: 4px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
@@ -329,7 +329,7 @@ button:hover {
 
 #back {
   position: absolute;
-  bottom: 18px;
+  bottom: 20px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   -webkit-transform: rotateY(180deg);
@@ -340,7 +340,7 @@ button:hover {
   #back {
     font-size: 22px;
     position: relative;
-    bottom: 26px;
+    bottom: 28px;
   }
 }
 
