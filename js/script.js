@@ -45,7 +45,7 @@ function copyPassword() {
 	// Hide the message after a few seconds
 	setTimeout(function () {
 		button.classList.remove('flipped');
-	}, 800);
+	}, 1000);
 
 	// Deselect the text
 	passwordInput.setSelectionRange(0, 0);
