@@ -76,12 +76,12 @@ body {
   background-color: #363837;
   padding: 180px 0px;
   color: aliceblue;
+  overflow: hidden;
 }
 @media (max-width: 768px) {
   body {
     font-size: 32px;
-    padding: 30px 0px;
-    overflow: hidden;
+    padding: 15px 0px;
   }
 }
 
@@ -94,6 +94,12 @@ body {
 
 label {
   cursor: pointer;
+  font-size: 32px;
+}
+@media (max-width: 768px) {
+  label {
+    font-size: 28px;
+  }
 }
 
 input {
@@ -103,6 +109,11 @@ input {
   text-align: center;
   background-color: rgb(247, 248, 248);
   font-size: 40px;
+}
+@media (max-width: 768px) {
+  input {
+    font-size: 32px;
+  }
 }
 
 button {
@@ -115,13 +126,13 @@ button {
 button:hover {
   box-shadow: 2px 2px 7px #49db57, -2px -2px 7px #49db57;
   transition: 0.6s;
-  padding: 22px 22px;
+  padding: 22px 28px;
 }
 @media (max-width: 768px) {
   button {
-    font-size: 32px;
-    padding: 20px 20px;
-    margin: 0px 0px 20px 0px;
+    font-size: 28px;
+    padding: 20px 26px;
+    margin: 0px 0px 10px 0px;
   }
 }
 
@@ -131,6 +142,11 @@ button:hover {
   border: 1px solid #2EFF43;
   border-radius: 10px;
   box-shadow: 5px 5px 15px #49db57, -5px -5px 15px #49db57;
+}
+@media (max-width: 768px) {
+  .passwdgen {
+    padding: 10px 5px;
+  }
 }
 .passwdgen h1 {
   margin: 0px 0px 25px 0px;
@@ -142,7 +158,7 @@ button:hover {
   .passwdgen h1 {
     letter-spacing: 1.5px;
     font-size: 40px;
-    margin: 0px 0px 30px 0px;
+    margin: 0px 0px 10px 0px;
   }
   .passwdgen h1 span {
     letter-spacing: 10.2px;
@@ -150,7 +166,7 @@ button:hover {
 }
 .passwdgen__selection-of-parameters {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   font-size: 32px;
 }
 @media (max-width: 768px) {
@@ -162,6 +178,11 @@ button:hover {
   position: relative;
   margin: 20px;
 }
+@media (max-width: 768px) {
+  .passwdgen__selection-of-parameters p {
+    margin: 10px;
+  }
+}
 .passwdgen__selection-of-parameters .label__container {
   display: block;
   position: relative;
@@ -171,7 +192,7 @@ button:hover {
 .passwdgen__selection-of-parameters .label__container .checkmark {
   position: absolute;
   bottom: 0;
-  left: -18px;
+  left: -38px;
   width: 35px;
   height: 35px;
   background-color: #eee;
@@ -215,10 +236,10 @@ button:hover {
 }
 @media (max-width: 768px) {
   .passwdgen__the-main-thing {
-    margin: 30px 0px 40px 0px;
+    margin: 30px 0px 20px 0px;
   }
   .passwdgen__the-main-thing p:first-child input {
-    padding: 10px 0px;
+    padding: 0px;
   }
 }
 .passwdgen__the-main-thing p:last-child {
@@ -232,6 +253,6 @@ button:hover {
 }
 @media (max-width: 768px) {
   .passwdgen__the-main-thing p:last-child input {
-    padding: 15px 5px;
+    padding: 10px 5px;
   }
 }
