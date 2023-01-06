@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*--------------------*/
 body {
-  background-color: #363837;
+  background-color: #1e2020;
   padding: 180px 0px;
   color: aliceblue;
   overflow: hidden;
@@ -149,6 +149,7 @@ button:hover {
   border-radius: 10px;
   -webkit-box-shadow: 5px 5px 15px #49db57, -5px -5px 15px #49db57;
           box-shadow: 5px 5px 15px #49db57, -5px -5px 15px #49db57;
+  background-color: #363837;
 }
 @media (max-width: 768px) {
   .passwdgen {
