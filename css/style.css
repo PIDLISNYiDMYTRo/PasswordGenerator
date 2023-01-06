@@ -150,6 +150,7 @@ button:hover {
 @media (max-width: 768px) {
   .passwdgen {
     padding: 10px 5px;
+    box-shadow: 10px 10px 45px #49db57, -10px -10px 45px #49db57;
   }
 }
 .passwdgen h1 {
@@ -314,7 +315,7 @@ button:hover {
   #front {
     position: relative;
     top: 1px;
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
@@ -330,7 +331,7 @@ button:hover {
   #back {
     font-size: 18px;
     position: relative;
-    bottom: 22px;
+    bottom: 20px;
   }
 }
 
