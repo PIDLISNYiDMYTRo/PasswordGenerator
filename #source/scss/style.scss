@@ -49,7 +49,10 @@ button {
 	&:hover {
 		box-shadow: 2px 2px 7px #49db57, -2px -2px 7px #49db57;
 		transition: .6s;
-		padding: 22px 28px;
+		padding: 22px 42px;
+		@media (max-width: 768px) {
+			padding: 22px 28px;
+		}
 	}
 	@media (max-width: 768px) {
 		font-size: 28px;
