@@ -1,6 +1,10 @@
 // Файл обнуляючих стилів
 @import "nullstyle";
 
+
+
+
+
 body {
 	display: flex;
 	justify-content: center;
@@ -16,6 +20,7 @@ body {
 	width: 700px;
 	height: 100vh;
 }
+
 
 
 main {
@@ -40,12 +45,17 @@ h1 {
 	span {
 		letter-spacing: 10.2px;
 	}
+	@media (max-height: 665px) {
+		font-size: 8vw;
+		margin: 20px 5px;
+	}
 }
 .top {
 	margin-bottom: 20px;
 	&__list {
 		display: flex;
 		flex-direction: column;
+		flex-wrap: wrap;
 		align-items: center;
 		text-align: center;
 		
@@ -54,6 +64,15 @@ h1 {
 		li {
 			width: 20%;
 			margin: 10px;
+			@media (max-height: 665px) {
+				width: 35%;
+			}
+		}
+		@media (max-height: 665px) {
+			margin-top: 20px;
+			font-size: 7vw;
+			flex-direction: row;
+			justify-content: center;
 		}
 	}
 }
@@ -78,6 +97,12 @@ h1 {
 		&:first-child {
 			width: 20%;
 			padding: 10px 5px;
+			@media (max-height: 665px) {
+				padding: 5px;
+			}
+		}
+		@media (max-height: 665px) {
+			padding: 15px 5px;
 		}
 	}
 }
@@ -97,6 +122,15 @@ h1 {
 		font-size: 6vw;
 		&:first-child {
 			margin-top: 20px;
+		}
+		&:last-child {
+			margin-bottom: 20px;
+		}
+		@media (max-height: 665px) {
+			padding: 10px 30px;
+			&:last-child {
+				margin-bottom: 20px;
+			}
 		}
 	}
 }
@@ -121,6 +155,10 @@ h1 {
 		border: 1px solid #000;
 		border-radius: 2px;
 		box-shadow: inset 1px 1px 1px #000, 1px 1px 1px #000;
+		@media (max-height: 665px) {
+			top: 0;
+			left: -6px;
+		}
 		&::after {
 			content: "";
 			position: absolute;
