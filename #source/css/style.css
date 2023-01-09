@@ -7,6 +7,7 @@
 }
 
 *, *:before, *:after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -77,9 +78,15 @@ body {
 }
 
 .content-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 100vh;
   text-align: center;
 }
@@ -88,7 +95,8 @@ body {
   padding: 20px 10px;
   border: 1px solid #2EFF43;
   border-radius: 10px;
-  box-shadow: 5px 5px 15px #49db57, -5px -5px 15px #49db57;
+  -webkit-box-shadow: 5px 5px 15px #49db57, -5px -5px 15px #49db57;
+          box-shadow: 5px 5px 15px #49db57, -5px -5px 15px #49db57;
   background-color: #363837;
   color: aliceblue;
   -webkit-user-select: none;
@@ -106,8 +114,11 @@ body {
   margin: 0px 0px 30px 0px;
 }
 .passwd__top-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .passwd__top-list li {
   font-size: 32px;
@@ -142,8 +153,13 @@ body {
   margin: 0px 0px 10px 0px;
 }
 .passwd .passwd__bottom_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .passwd .passwd__bottom_row button {
   padding: 10px;
@@ -152,7 +168,9 @@ body {
   font-size: 36px;
 }
 .passwd .passwd__bottom_row button:hover {
-  box-shadow: 2px 2px 5px #49db57, -2px -2px 5px #49db57;
+  -webkit-box-shadow: 2px 2px 5px #49db57, -2px -2px 5px #49db57;
+          box-shadow: 2px 2px 5px #49db57, -2px -2px 5px #49db57;
+  -webkit-transition: 0.6s;
   transition: 0.6s;
 }
 
@@ -171,7 +189,8 @@ body {
   background-color: #eee;
   border: 1px solid #000;
   border-radius: 2px;
-  box-shadow: inset 1px 1px 1px #000, 1px 1px 1px #000;
+  -webkit-box-shadow: inset 1px 1px 1px #000, 1px 1px 1px #000;
+          box-shadow: inset 1px 1px 1px #000, 1px 1px 1px #000;
 }
 .label__container .checkmark::after {
   content: "";
@@ -189,6 +208,7 @@ body {
 
 .label__container:hover input ~ .checkmark {
   background-color: #2EFF43;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -206,17 +226,24 @@ body {
   height: 18px;
   border: solid white;
   border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 #copy-button {
   position: relative;
   background-color: #2eff43;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: -webkit-transform 0.6s;
   transition: transform 0.6s;
-  transform-style: preserve-3d;
+  transition: transform 0.6s, -webkit-transform 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 #copy-button:hover {
-  box-shadow: 2px 2px 5px #49db57, -2px -2px 5px #49db57;
+  -webkit-box-shadow: 2px 2px 5px #49db57, -2px -2px 5px #49db57;
+          box-shadow: 2px 2px 5px #49db57, -2px -2px 5px #49db57;
+  -webkit-transition: 0.6s;
   transition: 0.6s;
 }
 
@@ -234,27 +261,33 @@ body {
   right: 70px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 #copy-button.flipped {
-  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 @-webkit-keyframes flip {
   from {
-    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
   }
   to {
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
   }
 }
 
 @keyframes flip {
   from {
-    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
   }
   to {
-    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
   }
 }

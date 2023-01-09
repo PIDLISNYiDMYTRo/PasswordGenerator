@@ -25,7 +25,7 @@ body {
 	box-shadow: 5px 5px 15px #49db57, -5px -5px 15px #49db57;
 	background-color: #363837;
 	color: aliceblue;
-
+	user-select: none;
 	h1 {
 		font-size: 62px;
 		letter-spacing: 4.8px;
@@ -54,6 +54,7 @@ body {
 			text-align: center;
 			background-color: rgb(247, 248, 248);
 			font-size: 32px;
+			text-overflow: ellipsis;
 		}
 
 		label:first-child {
