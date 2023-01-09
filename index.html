@@ -12,59 +12,12 @@
 </head>
 
 <body>
-	<<<<<<< HEAD <div class="container">
-		<div class="passwdgen">
-			<h1>Password <span>Generator</span></h1>
-			<div class="passwdgen__selection-of-parameters">
-				<p>
-					<label class="label__container" for="includeLowercase">абвгд
-						<input type="checkbox" id="includeLowercase" checked>
-						<span class="checkmark"></span>
-					</label>
-				</p>
-				<p>
-					<label class="label__container" for="includeUppercase">АБВГД
-						<input type="checkbox" id="includeUppercase" checked>
-						<span class="checkmark"></span>
-					</label>
-				</p>
-				<p>
-					<label class="label__container" for="includeNumbers">01234
-						<input type="checkbox" id="includeNumbers" checked>
-						<span class="checkmark"></span>
-					</label>
-				</p>
-				<p>
-					<label class="label__container" for="includeSymbols">"!@#$%"
-						<input type="checkbox" id="includeSymbols" checked>
-						<span class="checkmark"></span>
-					</label>
-				</p>
-			</div>
-			<div class="passwdgen__the-main-thing">
-				<p><label for="passwordLength">вибрати <input type="number" id="passwordLength" value="16" min="8"
-							max="128"> довжину</label>
-				</p>
-				<p><label for="password"></label>
-					<input type="text" id="password" readonly placeholder="Згенерований пароль">
-				</p>
-			</div>
-			<p>
-				<button id="generate-button" onclick="generatePassword()">Згенерувати пароль</button>
-			</p>
-
-			<button id="copy-button" onclick="copyPassword()">
-				<p id="front">Скопіювати пароль</p>
-				<p id="back">Успішно скопійовано!</p>
-			</button>
-		</div>
-		<script src="js/script.js"></script>
-		=======
-		<div class="container">
-			<main>
-				<section class="top">
-					<h1>Password <span>Generator</span></h1>
-					<ul class="top__list">
+	<div class="container">
+		<main class="content-row">
+			<section class="passwd">
+				<h1>Password <span>Generator</span></h1>
+				<div class="passwd__top">
+					<ul class="passwd__top-list">
 						<li>
 							<label class="label__container" for="includeLowercase">абв
 								<input type="checkbox" id="includeLowercase" checked>
@@ -83,35 +36,27 @@
 								<span class="checkmark"></span>
 						</li>
 					</ul>
-				</section>
-
-				<section class="body">
+				</div>
+				<div class="passwd__body">
 					<label for="passwordLength">вибрати <input type="number" id="passwordLength" value="16" min="8"
 							max="128">
 						довжину</label>
 					<label for="password"></label>
 					<input type="text" id="password" readonly placeholder="Згенерований пароль">
-				</section>
-
-				<section class="bottom__row">
-					<button id="generate-button" onclick="generatePassword()">Згенерувати пароль</button>
-					<button id="copy-button" onclick="copyPassword()">
-						<p id="front">Скопіювати пароль</p>
-						<span id="back">Успішно скопійовано!</span>
-					</button>
-				</section>
-			</main>
-		</div>
-
-
-
-
-
-
-
-		<script src="js/script.js"></script>
-		>>>>>>> 771605a7bc3e087218767935d6b3363f8e3a32f6
-
+				</div>
+				<div class="passwd__bottom">
+					<div class="passwd__bottom_row">
+						<button id="generate-button" onclick="generatePassword()">Згенерувати пароль</button>
+						<button id="copy-button" onclick="copyPassword()">
+							<p id="front">Скопіювати пароль</p>
+							<p id="back">Успішно скопійовано!</p>
+						</button>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+	<script src="js/script.js"></script>
 </body>
 
 </html>
