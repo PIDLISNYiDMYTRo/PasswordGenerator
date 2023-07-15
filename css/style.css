@@ -70,8 +70,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: inherit;
 }
+/*=============================================*/
 
-/*--------------------*/
 body {
   background-color: #1e2020;
 }
@@ -83,7 +83,6 @@ body {
   min-height: 100vh;
   text-align: center;
 }
-
 .passwd {
   padding: 20px 10px;
   border: 1px solid #2EFF43;
@@ -102,6 +101,9 @@ body {
   margin: 0px 0px 30px 0px;
   text-shadow: 2px 1px 1px rgba(6, 209, 26, 0.231372549);
 }
+
+
+
 .passwd .passwd__top {
   margin: 0px 0px 30px 0px;
 }
@@ -112,6 +114,10 @@ body {
 .passwd__top-list li {
   font-size: 32px;
 }
+
+
+
+/* Body================================ */
 .passwd .passwd__body {
   margin: 0px 0px 30px 0px;
 }
@@ -134,6 +140,10 @@ body {
   padding: 5px;
   width: 15%;
 }
+
+
+
+/* Footer===================================== */
 .passwd .passwd__bottom {
   max-width: 80%;
   margin: 0 auto;
