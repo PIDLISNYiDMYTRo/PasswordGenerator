@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-ua">
+
+<head>
+	<!-- Заголовок страницы в браузере -->
+	<title>Password Generator</title>
+	<!-- Подключаем CSS -->
+	<link rel="stylesheet" href="css/style.css" />
+	<!-- Кодировка страницы -->
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+	<div class="container">
+		<main class="content-row">
+			<section class="passwd">
+				<h1>Password <span>Generator</span></h1>
+				<div class="passwd__top">
+					<ul class="passwd__top-list">
+						<li>
+							<label class="label__container" for="includeLowercase">абв
+								<input type="checkbox" id="includeLowercase" checked>
+								<span class="checkmark"></span>
+						</li>
+						<li><label class="label__container" for="includeUppercase">АБВ
+								<input type="checkbox" id="includeUppercase" checked>
+								<span class="checkmark"></span>
+						</li>
+						<li><label class="label__container" for="includeNumbers">012
+								<input type="checkbox" id="includeNumbers" checked>
+								<span class="checkmark"></span>
+						</li>
+						<li><label class="label__container" for="includeSymbols">!@#
+								<input type="checkbox" id="includeSymbols" checked>
+								<span class="checkmark"></span>
+						</li>
+					</ul>
+				</div>
+				<div class="passwd__body">
+					<label for="passwordLength">вибрати <input type="number" id="passwordLength" value="16" min="8"
+							max="128">
+						довжину</label>
+					<label for="password"></label>
+					<input type="text" id="password" readonly placeholder="Згенерований пароль">
+				</div>
+				<div class="passwd__bottom">
+					<div class="passwd__bottom_row">
+						<button id="generate-button" onclick="generatePassword()">Згенерувати пароль</button>
+						<button id="copy-button" onclick="copyPassword()">
+							<p id="front">Скопіювати пароль</p>
+							<p id="back">Успішно скопійовано!</p>
+						</button>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
