@@ -18,20 +18,20 @@
         <input id="password" class="body__password" type="text" placeholder="Згенерований пароль">
         <ul class="body__list">
           <li class="list__item">
-            <lable for="include-lowercase" class="item__container">абв</lable>
-            <input class="item__checkbox" id="include-lowercase" type="checkbox" checked>
+            <label for="include-lowercase" class="item__container">абв</label>
+            <input id="include-lowercase" class="item__checkbox" type="checkbox" checked>
           </li>
           <li class="list__item">
-            <lable for="include-uppercase" class="item__container">АБВ</lable>
-            <input class="item__checkbox" id="include-uppercase" type="checkbox" checked>
+            <label for="include-uppercase" class="item__container">АБВ</label>
+            <input id="include-uppercase" class="item__checkbox" type="checkbox" checked>
           </li>
           <li class="list__item">
-            <lable for="include-numbers" class="item__container">012</lable>
-            <input class="item__checkbox" id="include-numbers" type="checkbox" checked>
+            <label for="include-numbers" class="item__container">012</label>
+            <input id="include-numbers" class="item__checkbox" type="checkbox" checked>
           </li>
           <li class="list__item">
-            <lable for="include-symbols" class="item__container">!@#</lable>
-            <input class="item__checkbox" id="include-symbols" type="checkbox" checked>
+            <label for="include-symbols" class="item__container">!@#</label>
+            <input id="include-symbols" class="item__checkbox" type="checkbox" checked>
           </li>
         </ul>
 
@@ -43,21 +43,14 @@
         </div>
       </div>
       <div class="main__bottom">
-        <button id="bottom__button-generate" type="button" class="bottom__btn_generate"
-          onclick="updatePassword()">Згенерувати пароль</button>
-
-        <div class="marg">
+        <div class="bottom__container-btn btn">
+          <button id="bottom__button-generate" class="btn_generate" type="button" onclick="updatePassword()">Згенерувати
+            пароль</button>
+        </div>
+        <div class="bottom__container-btn btn">
           <button id="bottom__button-copy" type="button" class="bottom__btn_copy" onclick="copyPassword()">Скопіювати
             пароль</button>
         </div>
-
-
-        <!-- <div class="marg">
-          <button id="bottom__button-copy" type="button" class="btn-flip" data-back="Back" data-front="Скопіювати"
-            onclick="copyPassword()">Скопіювати
-            пароль</button>
-        </div> -->
-
       </div>
     </main>
   </div>
