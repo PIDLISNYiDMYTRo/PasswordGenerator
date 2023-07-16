@@ -168,3 +168,16 @@ numberInput.addEventListener('input', handleInputChange)
 
 
 
+// Copy the password to the clipboard
+function copyPassword() {
+	passwordOutput.select();
+	document.execCommand("copy");
+
+	// Change button text to "Copied"
+	copyBtn.textContent = "Скопійовано";
+
+	// Revert button text after 1 second
+	setTimeout(function () {
+		copyBtn.textContent = "Копіювати пароль";
+	}, 500);
+}

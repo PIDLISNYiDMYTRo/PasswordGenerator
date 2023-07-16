@@ -18,6 +18,17 @@ html, body {
 
 
 
+button,
+label,
+input[type="checkbox"] {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+
+
+
+
 .wrapper {
   width: 100%;
 
@@ -65,6 +76,7 @@ html, body {
   border: none;
   border-radius: 5px;
   font-weight: 700;
+  background-color: #ffffffd5;
 }
 
 
@@ -96,24 +108,30 @@ html, body {
 
 
   /* border: 2px solid #2EFF43; */
-  border: 2px solid #000000;
+  
   box-shadow: 1px 1px 2px #fff;
-
   border-radius: 4px;
   outline: none;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  /* transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out; */
+  transition: outline 0.3s ease-in-out, border 0.1s ease-in-out;
   margin-left: 5px;
 }
 .item__checkbox:checked {
 /* background-color: #2196F3; */
 /* background-color: #2EFF43; */
 
+outline: 5px solid #000;
+outline-offset: -12px;
 
-background-color: #fff;
+background-color: inherit;
 border: none;
-box-shadow: none;
+border: 2px 2px 0 0;
+  border-style: solid;
+  border-color: #000;
 }
+
+
 
 
 
@@ -208,3 +226,5 @@ input[type=range]::-webkit-slider-runnable-track  {
 .bottom__container-btn:not(:last-child) {
   margin-bottom: 10px;
 }
+
+
