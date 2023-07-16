@@ -81,6 +81,7 @@ html, body {
 }
 .item__container {
   letter-spacing: -3px;
+  cursor: pointer;
 }
 /* Custom checkbox styles */
 .item__checkbox {
@@ -115,7 +116,8 @@ background-color: #2EFF43;
   margin: 0 10px;
 }
 .range__password-length {
-  width: 75%
+  width: 75%;
+  margin-bottom: 15px;
 }
 /* Range */
 /* Base styling */
@@ -159,7 +161,7 @@ input[type=range]::-webkit-slider-runnable-track  {
   width: 75%;
   margin: 0 auto;
   padding: 15px 5px;
-
+  cursor: pointer;
 
   background-color: #2eff43;
   border-radius: 5px;
@@ -177,6 +179,40 @@ input[type=range]::-webkit-slider-runnable-track  {
 
 
 
+.bottom__btn_copy {
+  position: relative;
+  
+  overflow: hidden;
+  padding: 0;
+ 
+  
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.bottom__btn_copy::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+ 
+
+  
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(90deg);
+}
+
+.bottom__btn_copy:hover,
+.bottom__btn_copy:focus {
+
+  transform: translateY(-2px);
+}
+
+.bottom__btn_copy:hover::after,
+.bottom__btn_copy:focus::after {
+  transform: translateY(-200%);
+}
+
+
 
 
 
@@ -184,3 +220,83 @@ input[type=range]::-webkit-slider-runnable-track  {
 /* AAAddd animation copy-button */
 
 
+
+/* .rotate-animation {
+  animation: rotate 0.5s;
+  transform-origin: center;
+}
+
+.generate-animation {
+  animation: shake 0.5s;
+  transform-origin: center;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(90deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-2px);
+  }
+  40% {
+    transform: translateX(2px);
+  }
+  60% {
+    transform: translateX(-2px);
+  }
+  80% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+ */
+
+
+
+
+ .generate-animation {
+  animation: shake 0.5s;
+}
+
+.copy-animation {
+  animation: translate 0.5s;
+  transform-origin: center;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-3px);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  75% {
+    transform: translateX(-3px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: translateX(90deg);
+  }
+}
