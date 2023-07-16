@@ -10,9 +10,7 @@ ul {
 
 html, body {
   height: 100%;
-  overflow: hidden;
-
-
+  background-color: #363837;
   font-size: 30px;
 }
 
