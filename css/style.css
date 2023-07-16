@@ -160,3 +160,21 @@ input[type=range]::-webkit-slider-runnable-track  {
 .bottom__container-btn:not(:last-child) {
   margin-bottom: 10px;
 }
+@media (min-width: 649.98px) {
+  input[type="range"] {
+    background-size: 15% 100%;
+  }
+  .wrapper {
+    width: 100%;
+    background-color: #363837;
+    color: aliceblue;
+  }
+}
+@media (min-width: 1023.98px) {
+  .wrapper {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #363837;
+    color: aliceblue;
+  }
+}
