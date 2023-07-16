@@ -55,11 +55,14 @@ html, body {
   display: block;
   width: 100%;
   height: 50px;
-  padding: 0 5px;
+  padding: 0 10px;
   text-align: center;
   font-size: 22px;
   overflow-x: auto;
   margin-bottom: 30px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
 }
 
 
@@ -73,8 +76,8 @@ html, body {
   margin-bottom: 30px;
 }
 .list__item {
-  position: relative;
-
+  display: flex;
+  align-items: center;
 }
 .item__container {
   letter-spacing: -3px;
@@ -91,6 +94,7 @@ html, body {
   outline: none;
   cursor: pointer;
   transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  margin-left: 5px;
 }
 .item__checkbox:checked {
 /* background-color: #2196F3; */
@@ -162,5 +166,21 @@ input[type=range]::-webkit-slider-runnable-track  {
   font-size: 22px;
 }
 .bottom__btn_generate {
-  margin-bottom: 20px;
+ 
 }
+
+.marg {
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* AAAddd animation copy-button */
+
+

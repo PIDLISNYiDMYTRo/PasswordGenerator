@@ -227,3 +227,18 @@ rangeInputs.forEach(input => {
 })
 
 numberInput.addEventListener('input', handleInputChange)
+
+
+
+
+
+
+
+
+
+// AAAddd animation copy-button
+
+
+
+
+
