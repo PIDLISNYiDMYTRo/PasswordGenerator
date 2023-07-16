@@ -34,8 +34,17 @@
             <input id="include-symbols" class="item__checkbox" type="checkbox" checked>
           </li>
         </ul>
-        <label class="body__password-length" for="password-length">вибрати <input id="password-length" type="number"
-            value="16" min="8" max="64"> довжину</label>
+        <!-- <label class="body__password-length" for="password-length">вибрати <input id="password-length" type="range"
+            value="16" min="8" max="64"> довжину</label> -->
+        <!-- <div class="range__container">
+          <input id="password-length" type="range" value="16" min="8" max="64">
+          <span class="range__value" id="password-length-value"></span>
+        </div> -->
+        <div class="body__range_container">
+          <p>довжина:</p>
+          <input id="password-length" class="range__password-length" type="range" value="16" min="8" max="64">
+          <span class="range__value" id="password-length-value"></span>
+        </div>
       </div>
       <div class="main__bottom">
         <button id="bottom__button-generate" type="button" class="bottom__btn_generate"

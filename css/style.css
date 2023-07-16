@@ -17,9 +17,6 @@ html, body {
 
 .wrapper {
   width: 100%;
-  height: 100vh;
-  overflow-y: scroll; /* Enable vertical scrolling */
-  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
 
   
 
@@ -99,18 +96,16 @@ background-color: #2EFF43;
 
 
 
-.body__password-length {
-  display: block;
+.body__range_container {
   text-align: center;
-  font-size: 24px;
 }
-.body__password-length input {
-  text-align: center;
-  font-size: 24px;
-  width: 50px;
-}
-
+.range__password-length {}
+.range__value {
   
+}
+input[type="range"] {
+  color: #2EFF43;
+}
 
 
 
