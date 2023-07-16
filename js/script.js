@@ -57,7 +57,7 @@
 
 function setContainerHeight() {
 	var windowHeight = window.innerHeight;
-	document.querySelector('.wrapper').style.height = windowHeight + 'px';
+	document.querySelector('.row__main').style.height = windowHeight + 'px';
 }
 
 // Call the function initially to set the container height
