@@ -11,6 +11,9 @@ ul {
 html, body {
   height: 100%;
   overflow: hidden;
+
+
+  font-size: 30px;
 }
 
 
@@ -56,7 +59,7 @@ html, body {
   text-align: center;
   font-size: 22px;
   overflow-x: auto;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 
@@ -65,9 +68,9 @@ html, body {
   display: flex;
   justify-content: space-between;
   
-  font-size: 30px;
+  
 
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .list__item {
   position: relative;
@@ -97,17 +100,48 @@ background-color: #2EFF43;
 
 
 .body__range_container {
+  
   text-align: center;
-}
-.range__password-length {}
-.range__value {
   
 }
-input[type="range"] {
-  color: #2EFF43;
+.range__lable {
+ 
 }
-
-
+.lable__value {
+  margin: 0 10px;
+}
+.range__password-length {
+  width: 75%
+}
+/* Range */
+/* Base styling */
+input[type="range"] {
+  -webkit-appearance: none;
+  height: 11px;
+  /* background: rgba(255, 255, 255, 0.6); */
+  border-radius: 5px;
+  background-image: linear-gradient(#2EFF43, #2EFF43);
+  background-size: 20% 100%;
+  background-repeat: no-repeat;
+}
+/* Styling the thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #2EFF43;
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  transition: background .3s ease-in-out;
+}
+/* Styling the track */
+input[type=range]::-webkit-slider-runnable-track  {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
 
 
 
