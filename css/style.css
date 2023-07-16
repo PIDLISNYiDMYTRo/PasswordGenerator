@@ -10,16 +10,16 @@ ul {
 
 html, body {
   height: 100%;
-}
-body {
   overflow: hidden;
 }
+
 
 
 .wrapper {
   width: 100%;
   height: 100vh;
- 
+  overflow-y: scroll; /* Enable vertical scrolling */
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
 
   
 
