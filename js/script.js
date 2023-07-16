@@ -11,32 +11,7 @@ setContainerHeight();
 window.addEventListener('resize', setContainerHeight);
 // ---------------------------------------------------------------------------
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// HEADER =================================================
+// ------------Body Password Generator------------
 
 // Get required elements
 const generateBtn = document.getElementById("bottom__button-generate");
@@ -77,7 +52,7 @@ function generatePassword() {
 	if (includeSymbols) characters += symbolCharacters;
 
 	if (characters === "") {
-		return "Please select at least one option.";
+		return "Виберіть значення нижче";
 	}
 
 	let password = "";
@@ -113,14 +88,7 @@ passwordLengthInput.addEventListener("input", () => {
 // Initialize password length value
 updatePasswordLength();
 
-// ===================================================================
-
-
-
-
-
-
-
+// --------------------------------------------------------------------------
 
 // ------------When you click on the label, a checkbox is selected------------
 // Get required elements
@@ -156,23 +124,14 @@ rangeInputs.forEach(input => {
 })
 
 numberInput.addEventListener('input', handleInputChange)
-// ---------------------------------------------------------------------------
-
-
-
-
-
-
-
-// AAAddd animation copy-button
-
-
+// --------------------------------------------------------------------------
 
 // Copy the password to the clipboard
 function copyPassword() {
 	passwordOutput.select();
 	document.execCommand("copy");
 
+	passwordOutput.blur(); // Remove focus from the password field
 	// Change button text to "Copied"
 	copyBtn.textContent = "Скопійовано";
 
@@ -181,3 +140,4 @@ function copyPassword() {
 		copyBtn.textContent = "Копіювати пароль";
 	}, 500);
 }
+// --------------------------------------------------------------------------

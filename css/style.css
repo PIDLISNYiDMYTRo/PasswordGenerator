@@ -211,7 +211,7 @@ input[type=range]::-webkit-slider-runnable-track  {
 
   /* background-color: #2eff43; */
   background: #323237;
-  box-shadow: 3px 3px 5px #fff;
+  box-shadow: 0 0 5px #fff, 0 0 5px #fff;
 
 
 
@@ -222,6 +222,10 @@ input[type=range]::-webkit-slider-runnable-track  {
   
   border: none;
   outline: 0;
+  transition: box-shadow 0.1s ease-in-out;
+}
+.bottom__container-btn button:active {
+  box-shadow: 0 0 5px #000, 0 0 5px #000; 
 }
 .bottom__container-btn:not(:last-child) {
   margin-bottom: 10px;
